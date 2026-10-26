@@ -4,6 +4,13 @@
 
 KosManager adalah aplikasi web untuk membantu pengelola kos mengelola data kamar, penghuni, tagihan, transaksi pembayaran, dan laporan keuangan melalui satu sistem terpusat.
 
+## Tampilan Aplikasi
+
+### Dashboard
+
+![Dashboard KosManager](docs/screenshots/dashboard.PNG)
+
+
 ## Fitur Utama
 
 - **Dashboard** — ringkasan informasi dan statistik kos.
