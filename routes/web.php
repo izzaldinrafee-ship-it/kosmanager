@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+Route::view('/demo', 'demo')->name('demo');
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\TenantController;
 use App\Http\Controllers\PaymentController;
