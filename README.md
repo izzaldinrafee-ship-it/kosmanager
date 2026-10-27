@@ -1,8 +1,13 @@
-# KosManager
+# KosManager — Sistem Manajemen Kos Berbasis Web
 
-**Sistem Manajemen Kos Berbasis Web**
+KosManager adalah aplikasi web untuk membantu pengelola rumah kos mengelola kamar, penghuni, tagihan, transaksi pembayaran, dan laporan keuangan dalam satu sistem terpusat.
 
-KosManager adalah aplikasi web untuk membantu pengelola kos mengelola data kamar, penghuni, tagihan, transaksi pembayaran, dan laporan keuangan melalui satu sistem terpusat.
+Proyek ini dikembangkan sebagai portofolio pengembangan web dengan Laravel, PHP, dan MySQL.
+
+**Demo:** https://izzaldev.com  
+**Repository:** https://github.com/izzaldinrafee-ship-it/kosmanager
+
+---
 
 ## Tampilan Aplikasi
 
@@ -10,89 +15,144 @@ KosManager adalah aplikasi web untuk membantu pengelola kos mengelola data kamar
 
 ![Dashboard KosManager](docs/screenshots/dashboard.PNG)
 
+---
 
 ## Fitur Utama
 
-- **Dashboard** — ringkasan informasi dan statistik kos.
+- **Dashboard** — menampilkan ringkasan informasi dan statistik pengelolaan kos.
 - **Manajemen Kamar** — mengelola data kamar dan status hunian.
-- **Manajemen Penghuni** — mengelola data penghuni kos.
-- **Pembayaran** — membuat dan mengelola tagihan bulanan.
-- **Riwayat Transaksi** — mencatat pembayaran dengan metode Tunai, Transfer, QRIS, dan E-Wallet.
-- **Status Pembayaran Otomatis** — memperbarui status menjadi Belum Bayar, Sebagian, atau Lunas.
-- **Laporan Keuangan** — melihat ringkasan pembayaran dan keuangan.
-- **Profil Akun** — memperbarui informasi akun dan kata sandi.
+- **Manajemen Penghuni** — mengelola informasi penghuni kos.
+- **Manajemen Pembayaran** — mengelola tagihan pembayaran bulanan.
+- **Riwayat Transaksi** — mencatat transaksi pembayaran dengan metode tunai, transfer, QRIS, dan e-wallet.
+- **Status Pembayaran** — mendukung status Belum Bayar, Sebagian, dan Lunas.
+- **Laporan Keuangan** — menyajikan ringkasan pembayaran dan informasi keuangan.
+- **Profil Akun** — memungkinkan pengguna memperbarui informasi akun dan kata sandi.
 
 ## Teknologi
 
-- PHP
-- Laravel
-- MySQL
-- Bootstrap 5
-- Bootstrap Icons
-- Vite dan npm
-
-## Persyaratan
-
-- PHP dan Composer
-- MySQL
-- Node.js dan npm
+| Teknologi | Penggunaan |
+|---|---|
+| PHP | Bahasa pemrograman backend |
+| Laravel | Framework aplikasi web |
+| MySQL | Basis data relasional |
+| Bootstrap 5 | Framework antarmuka |
+| Bootstrap Icons | Ikon antarmuka |
+| Vite | Build aset frontend |
+| npm | Manajemen dependensi frontend |
 
 ## Instalasi Lokal
 
-1. Clone repository:
+### 1. Persyaratan
 
-   ```bash
-   git clone <URL-REPOSITORY>
-   cd kosmanager
-   ```
+Pastikan perangkat sudah memiliki:
 
-2. Instal dependensi PHP:
+- PHP dengan ekstensi yang dibutuhkan Laravel.
+- Composer.
+- MySQL.
+- Node.js dan npm.
+- Git.
 
-   ```bash
-   composer install
-   ```
+### 2. Clone repository
 
-3. Buat file konfigurasi lokal:
+```bash
+git clone https://github.com/izzaldinrafee-ship-it/kosmanager.git
+cd kosmanager
+```
 
-   ```bat
-   copy .env.example .env
-   ```
+### 3. Instal dependensi PHP
 
-4. Buat application key:
+```bash
+composer install
+```
 
-   ```bash
-   php artisan key:generate
-   ```
+### 4. Siapkan konfigurasi aplikasi
 
-5. Atur koneksi database MySQL pada file `.env`, lalu buat database kosong yang sesuai.
+Untuk Windows Command Prompt:
 
-6. Jalankan migrasi database:
+```bat
+copy .env.example .env
+```
 
-   ```bash
-   php artisan migrate
-   ```
+Untuk Linux atau macOS:
 
-7. Instal dependensi frontend dan buat aset:
+```bash
+cp .env.example .env
+```
 
-   ```bash
-   npm install
-   npm run build
-   ```
+Buat application key:
 
-8. Jalankan aplikasi:
+```bash
+php artisan key:generate
+```
 
-   ```bash
-   php artisan serve
-   ```
+### 5. Konfigurasi database
 
-9. Buka http://127.0.0.1:8000 di browser.
+Buat database MySQL untuk lingkungan pengembangan, kemudian sesuaikan konfigurasi berikut di `.env`:
 
-## Status Proyek
+```dotenv
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=nama_user
+DB_PASSWORD=password_database
+```
 
-Proyek portofolio untuk menerapkan pengembangan aplikasi web menggunakan Laravel, pengelolaan database relasional, autentikasi pengguna, dan alur transaksi pembayaran.
+Ganti nilai contoh di atas sesuai konfigurasi MySQL lokal.
 
-## Catatan Keamanan
+### 6. Jalankan migrasi
 
-- Jangan mengunggah file `.env` atau kredensial database ke repository publik.
-- Gunakan database pengembangan sendiri saat menjalankan migrasi.
-- Buat akun aplikasi sendiri setelah instalasi jika belum tersedia akun awal.
+```bash
+php artisan migrate
+```
+
+### 7. Instal dan build aset frontend
+
+```bash
+npm install
+npm run build
+```
+
+### 8. Jalankan aplikasi
+
+```bash
+php artisan serve
+```
+
+Buka aplikasi melalui:
+
+http://127.0.0.1:8000
+
+**Catatan:** Siapkan akun aplikasi menggunakan mekanisme pembuatan akun administrator yang dikonfigurasi untuk lingkungan pengembangan. Jangan menggunakan kredensial produksi pada lingkungan lokal.
+
+## Deployment
+
+Aplikasi ini telah dideploy ke hosting dengan konfigurasi produksi dan database MySQL.
+
+- URL: https://izzaldev.com
+- Environment: Production
+- HTTPS: Aktif
+- Debug mode: Dinonaktifkan
+
+## Tujuan Pengembangan
+
+Proyek ini menjadi sarana untuk menerapkan dan mendokumentasikan keterampilan dalam:
+
+- Pengembangan aplikasi web menggunakan Laravel.
+- Perancangan dan pengelolaan database relasional.
+- Autentikasi dan pengelolaan akun pengguna.
+- Implementasi alur pembayaran dan pencatatan transaksi.
+- Deployment aplikasi web ke hosting.
+- Pengelolaan source code menggunakan Git dan GitHub.
+
+## Keamanan
+
+- Jangan mengunggah file `.env`, password, token, atau kredensial database ke repository publik.
+- Gunakan database terpisah untuk pengembangan dan produksi.
+- Jangan menampilkan informasi error sensitif kepada pengguna produksi.
+- Buat backup database secara berkala.
+- Jangan memasukkan data pribadi penghuni kos ke screenshot atau dokumentasi publik.
+
+---
+
+**KosManager** — Boarding House Management System.
