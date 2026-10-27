@@ -4,7 +4,7 @@ KosManager adalah aplikasi web untuk membantu pengelola rumah kos mengelola kama
 
 Proyek ini dikembangkan sebagai portofolio pengembangan web dengan Laravel, PHP, dan MySQL.
 
-**Demo:** https://izzaldev.com  
+**Live Demo:** https://izzaldev.com/demo  
 **Repository:** https://github.com/izzaldinrafee-ship-it/kosmanager
 
 ---
@@ -21,6 +21,7 @@ Proyek ini dikembangkan sebagai portofolio pengembangan web dengan Laravel, PHP,
 
 Try KosManager online:
 
+- **Demo page:** https://izzaldev.com/demo
 - **Website:** https://izzaldev.com
 - **Demo account:** Use the demo credentials provided by the project owner.
 
