@@ -17,6 +17,25 @@ Proyek ini dikembangkan sebagai portofolio pengembangan web dengan Laravel, PHP,
 
 ---
 
+## Live Demo
+
+Try KosManager online:
+
+- **Website:** https://izzaldev.com
+- **Demo account:** Use the demo credentials provided by the project owner.
+
+### Demo Features
+
+- Dashboard with room and payment summaries
+- Room management
+- Tenant management
+- Billing and payment transactions
+- Monthly financial reports
+
+**Note:** This project is a portfolio demonstration. All demo data is fictional.
+
+---
+
 ## Fitur Utama
 
 - **Dashboard** — menampilkan ringkasan informasi dan statistik pengelolaan kos.
